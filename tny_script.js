@@ -20,3 +20,6 @@ document.getElementById('days').textContent = `dd`;
 document.getElementById('hrs').textContent = `hh`;
 document.getElementById('mins').textContent = `mm`;
 document.getElementById('secs').textContent = `ss`;
+
+//To store the current date & time
+var currentDay = new Date('May 23, 2018 14:35:05');
