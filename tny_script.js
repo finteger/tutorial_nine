@@ -23,3 +23,11 @@ document.getElementById('secs').textContent = `ss`;
 
 //To store the current date & time
 var currentDay = new Date('May 23, 2018 14:35:05');
+
+//Split the date & time and convert to local convention
+var dateStr = currentDay.toLocaleDateString();
+var timeStr = currentDay.toLocaleTimeString();
+
+//Display the current date & time
+document.getElementById('dateNow').innerHTML = 
+dateStr + '<br />' + timeStr;
