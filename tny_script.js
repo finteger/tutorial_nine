@@ -22,7 +22,7 @@ document.getElementById('mins').textContent = `mm`;
 document.getElementById('secs').textContent = `ss`;
 
 //To store the current date & time
-var currentDay = new Date('May 23, 2018 14:35:05');
+var currentDay = new Date();
 
 //Split the date & time and convert to local convention
 var dateStr = currentDay.toLocaleDateString();
