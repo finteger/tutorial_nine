@@ -31,3 +31,13 @@ var timeStr = currentDay.toLocaleTimeString();
 //Display the current date & time
 document.getElementById('dateNow').innerHTML = 
 dateStr + '<br />' + timeStr;
+
+//Calculating the days until January 1st
+var newYear = new Date('January 1st, 2026');
+var nextYear = currentDay.getFullYear() + 1;
+newYear.setFullYear(nextYear);
+var daysLeft = (newYear - currentDay) / (1000 * 60 * 60 * 24);
+
+
+//Display the time left in the New Years Eve Countdown Clock
+document.getElementById('days').innerHTML = daysLeft;
