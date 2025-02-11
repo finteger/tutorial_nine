@@ -10,8 +10,12 @@
    Date:   2025-02-06
 
 */
+//Invoke the function
+setInterval( 
+"runClock()"
+,1000);
 
-
+function runClock(){
 //Display the current date & time
 document.getElementById('dateNow').innerHTML = `m/d/y<br /> h:m:s`;
 
@@ -47,5 +51,5 @@ document.getElementById('hrs').innerHTML = Math.floor(hrsLeft);
 document.getElementById('mins').innerHTML = Math.floor(minsLeft);
 document.getElementById('secs').innerHTML = Math.floor(secsLeft);
 
-
+}
 
