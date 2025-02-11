@@ -37,7 +37,11 @@ var newYear = new Date('January 1st, 2026');
 var nextYear = currentDay.getFullYear() + 1;
 newYear.setFullYear(nextYear);
 var daysLeft = (newYear - currentDay) / (1000 * 60 * 60 * 24);
-
+var hrsLeft = (daysLeft - Math.floor(daysLeft)) * 24;
 
 //Display the time left in the New Years Eve Countdown Clock
-document.getElementById('days').innerHTML = daysLeft;
+document.getElementById('days').innerHTML = Math.floor(daysLeft);
+document.getElementById('hrs').innerHTML = Math.floor(hrsLeft);
+
+
+
